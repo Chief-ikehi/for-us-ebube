@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <title>For My Baby❤️</title>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'><link rel="stylesheet" href="./style.css">
-  <!-- Script to check if the user is on a mobile device -->
-    <script>
-        if (window.innerWidth <= 768) {
-            document.write('<div style="text-align: center; padding: 20px; font-size: 24px; color: red;">Use your computer to view this content.</div>');
-        }
-    </script>
+    <!-- Add this script just before the closing </body> tag -->
+<script>
+    // JavaScript to check if the user is on a mobile device
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        document.body.innerHTML = '<div style="text-align: center; padding: 20px; font-size: 24px; color: red;">Use your computer to view this content.</div>';
+    }
+</script>
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
